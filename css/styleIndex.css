@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #f8b400, #f06d06); /* Golden to orange gradient */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center everything */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5dcb7; /* Text color for better visibility */
+}
+
+h1 {
+    font-size: 3rem; /* Big font size */
+    font-weight: bold;
+    color: #f5dcb7; /* Darker color for the title */
+    text-align: center; /* Center the text */
+    text-transform: uppercase; /* All caps */
+    letter-spacing: 5px; /* Add some space between letters */
+    margin-bottom: 50px;
+}
+
+#uploadBtn {
+    background-color: #692e5e; /* Bright orange color for a bold look */
+    color: #f5dcb7; /* White text */
+    font-size: 1.5rem; /* Large text */
+    padding: 20px 40px; /* Make the button big */
+    border: none;
+    border-radius: 50px; /* Rounded edges for a sleek feel */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-top: 0px; /* Add space between the title and button */
+    display: inline-block; /* Make the button a block-level element */
+    margin-left: 10px; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+#uploadBtn:hover {
+    background-color: #f8b400; /* Lighter shade on hover */
+    transform: scale(1.1); /* Slightly bigger when hovered */
+}
+#uploadBtn:focus {
+    outline: none; /* Remove focus outline */
+}
+.button-container {
+    text-align: center; /* Center the buttons horizontally */
+}
+
+#credits {
+    position: absolute;
+    bottom: 20px; /* Positioned at the bottom of the screen */
+    color: #f5dcb7;
+    font-size: 1rem;
+    text-align: bottom;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly darkened background */
+    border-top: 1px solid #692e5e; /* Border to separate it from content */
+}
+#credits a {
+    color: #f5dcb7;
+    text-decoration: none;
+    font-weight: bold;
+}
+#credits a:hover {
+    text-decoration: underline;
+}
+
+#errorPopup {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#categorySelectionPopup {
+    background-color: #692e5e;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 420px;
+    margin: 20px auto;
+    text-align: center;
+}
+#categorySelectionPopup select {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+#categorySelectionPopup button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #2E6939;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#categorySelectionPopup button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Slightly bigger when hovered */
+}
+
+#jsonButtonsContainer {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+}
+.json-btn {
+    background-color: #333; /* Dark color to keep them subtle */
+    color: #f5dcb7; /* Soft, warm color for text */
+    font-size: 0.9rem; /* Small text */
+    padding: 8px 12px; /* Compact size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    opacity: 0.6; /* Slight transparency to keep them discreet */
+}
+.json-btn:hover {
+    background-color: #555; /* Slightly brighter on hover */
+    transform: scale(1.05);
+    opacity: 1;
+}

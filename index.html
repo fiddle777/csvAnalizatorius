@@ -1,0 +1,45 @@
+        <!-- pupulate categoryBase.json -->
+    <!-- decide and build deployment hosting-->
+    <!-- censor easter egg-->
+        <!-- delta sierra-->
+        <!-- delta kilo-->
+        <!-- test site on multiple devices-->
+<!-- clean up code, nors... sudo nenuslifuosi-->
+<!-- non coder testing-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <title>CSV Budget Analyzer</title>
+</head>
+<body>
+    <h1>CSV Išlaidų analizės įrankis</h1>
+    <div id="jsonButtonsContainer">
+        <button id="importJsonBtn" class="json-btn">Įkelti JSON</button>
+        <button id="exportJsonBtn" class="json-btn">Atsisiųsti JSON</button>
+    </div>
+    <input type="file" id="jsonFileInput" style="display: none;">
+    <div id="errorPopup" class="popup"></div>
+    <div class = "button-container">
+    <button id="uploadBtn">Įkelti CSV</button>
+    <input type="file" id="csvFileInput" accept=".csv" style="display:none;" />
+    </div>
+
+    <div id="credits">
+        <p>
+            PRIf 23/4<br>
+            <a href="https://www.youtube.com/watch?v=5bBKxAMDs-Y" target="_blank">Deividas Narbutas</a>, 
+            <a>Dominykas Somoroko</a>, 
+            <a>Dominykas Švabovič</a>
+        </p>
+    </div>
+
+    <script type="module" src="js/csvInputSwedbankLT.js"></script>
+    <script type="module" src="js/categoryBuilder.js"></script>
+    <script type="module" src="js/categoryBaseControl.js"></script>
+    <script type="module" src="js/results.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</body>
+</html>

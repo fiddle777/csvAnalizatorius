@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleResults.css">
+    <title>Results</title>
+</head>
+<body>
+    <header>
+    <h1>CSV Analizės rezultatai</h1>
+    <h2>
+        <p>[<span id="firstDate">Loading...</span>; <span id="lastDate">Loading...</span>]</p>
+    </h2>
+    </header>
+    <div id="top-dashboard" class="dashboard">
+        <div class="panel small">
+            <h3 class="panel-title">Išlaidos ir pajamos</h3>
+            <canvas id="incomeExpenseChart"></canvas>
+        </div>
+        <div class="panel small">
+            <h3 class="panel-title">Išlaidos pagal kategoriją</h3>
+            <ul id="categoryTotalsList"></ul>
+        </div>
+        <div class="panel small">
+            <h3 class="panel-title">Likutis</h3>
+            <p id="balanceDisplay">Loading...</p>
+            <p id="incomeDisplay">Loading...</p>
+            <p id="expensesDisplay">Loading...</p>
+        </div>
+    </div>
+
+    <div id="bottom-dashboard" class="dashboard">
+        <div class="panel large"></div>
+    </div>
+    <div id="bottom-dashboard" class="dashboard">
+        <div id="insightsPanel" class="panel large"></div>
+    </div>
+    <div id="buttons-container" style="text-align: center; margin-top: 20px;">
+        <button id="downloadInsights" class="download-button">Atsisiųsti insights.json</button>
+        <button id="downloadCategoryBase" class="download-button">Atsisiųsti categoryBase.json</button>
+    </div>
+
+    <div id="credits">
+        <p>
+            PRIf 23/4<br>
+            <a href="https://www.youtube.com/watch?v=5bBKxAMDs-Y" target="_blank">Deividas Narbutas</a>, 
+            <a>Dominykas Somoroko</a>, 
+            <a>Dominykas Švabovič</a>
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/results.js" type="module" defer></script>
+    <script src="js/insights.js" type="module" defer></script></script>
+</body>
+</html>

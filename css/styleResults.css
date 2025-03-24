@@ -1,0 +1,208 @@
+body {
+    background-color: #121212; /* Deep dark background */
+    color: #E0E0E0; /* Light gray for readability */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-between; /* Place h1 on the left and h2 on the right */
+    align-items: center; /* Align items vertically at the same height */
+    width: 100%; /* Make the header span the full width */
+    padding: 10px 20px; /* Add some padding for spacing */
+    top: 0; /* Align to the top of the screen */
+    left: 0; /* Align to the left of the screen */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+h1, h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    color: #E0E0E0; /* Light gray color */
+    text-transform: uppercase; /* All caps */
+    letter-spacing: 3px; /* Add some space between letters */
+    text-align: center; /* Center-align the text */
+    margin-top: 10px; /* Add spacing above the text */
+}
+h2 {
+    font-size: 1.5rem; /* Slightly smaller font size for h2 */
+    text-align: right; /* Align text to the right */
+    margin-right: 30px;
+    letter-spacing: 3px;
+}
+h3{
+    text-align: center; /* Align text to the center */
+    margin-right: 30px;
+    letter-spacing: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #bottom-dashboard {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Reduce spacing for smaller screens */
+    }
+
+    h1, h2 {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
+}
+
+.dashboard {
+    display: grid;
+    gap: 20px;
+    width: 90%;
+    margin: 50px auto;
+    margin-top: 0px;
+}
+#top-dashboard {
+    grid-template-columns: repeat(3, 1fr);
+}
+#bottom-dashboard {
+    grid-template-columns: repeat(1, 1fr);
+}
+.panel {
+    background-color: #262626; /* Dark gray for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 140, 66, 0.5); /* Subtle neon glow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+}
+.panel:hover {
+    transform: scale(1.05);
+}
+.small {
+    height: 200px;
+}
+.large {
+    height: 300px;
+}
+.panel canvas {
+    width: 100%;
+    height: 100%;
+}
+.panel-title {
+    margin: 0 0 10px 0; /* Add spacing below the title */
+    font-size: 1.2rem; /* Adjust font size */
+    text-align: center; /* Center the title */
+    color: #E0E0E0; /* Light gray color for readability */
+}
+
+#insightsPanel {
+    overflow-y: auto; /* Add a scrollbar if content overflows */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Ensure wrapping for long words */
+    white-space: normal; /* Allow text to wrap */
+    padding: 10px; /* Add padding for spacing */
+    text-align: left; /* Align text to the left */
+    border-radius: 5px; /* Rounded corners */
+    color: #E0E0E0; /* Light text for readability */
+}
+#insightsPanel ul {
+    list-style-type: disc; /* Add bullet points */
+    padding-left: 20px; /* Add space for the bullet points */
+    margin: 0; /* Remove default margin */
+}
+#insightsPanel li {
+    margin: 5px 0; /* Add spacing between list items */
+    padding: 5px; /* Add padding inside each list item */
+    border-radius: 3px; /* Optional: Rounded corners for list items */
+    background-color: #262626; /* Slightly lighter background for list items */
+    color: #FFFFFF; /* Bright white text for list items */
+    font-size: 1.0rem; /* Adjust font size */
+}
+#insightsPanel::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+#insightsPanel::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+    border: 2px solid #262626; /* Optional: Add a border to match the panel background */
+}
+#insightsPanel::-webkit-scrollbar-track {
+    background-color: #1E1E1E; /* Color of the scrollbar track */
+    border-radius: 5px; /* Rounded corners for the track */
+}
+#insightsPanel::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color when hovered */
+}
+
+#categoryTotalsList {
+    max-height: 300px; /* Limit the height of the list */
+    overflow-y: auto; /* Add a vertical scrollbar if content overflows */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding: 5px; /* Reduce padding for compactness */
+    border-radius: 0px; /* Rounded corners */
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Ensure wrapping for long words */
+    color: #E0E0E0; /* Light text for readability */
+    list-style: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+}
+#categoryTotalsList li {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-between; /* Space out the content */
+    align-items: center; /* Align items vertically */
+    margin: 2px 0; /* Reduce spacing between list items */
+    padding: 5px; /* Minimal padding */
+    color: #FFFFFF; /* Bright white text */
+    font-size: 0.85rem; /* Smaller font size for compactness */
+    border-radius: 3px; /* Optional: Rounded corners for list items */
+}
+#categoryTotalsList::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+#categoryTotalsList::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+}
+#categoryTotalsList::-webkit-scrollbar-track {
+    background-color: #1E1E1E; /* Color of the scrollbar track */
+}
+
+.download-button {
+    background-color: #34D399; /* Green background */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 10px 30px;
+    margin: 50px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.download-button:hover {
+    background-color: #10B981; /* Darker green on hover */
+}
+
+#credits {
+    position: flex;
+    bottom: 20px; /* Positioned at the bottom of the screen */
+    color: #f5dcb7;
+    font-size: 1rem;
+    text-align: bottom;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly darkened background */
+    border-top: 1px solid #692e5e; /* Border to separate it from content */
+}
+#credits a {
+    color: #f5dcb7;
+    text-decoration: none;
+    font-weight: bold;
+}
+#credits a:hover {
+    text-decoration: underline;
+}

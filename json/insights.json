@@ -1,0 +1,485 @@
+{
+    "rules": [
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_income",
+                "operator": "<",
+                "right": 500
+            },
+            "message": "Jūsų pajamos yra mažesnės nei 500 šmekelių. Galbūt verta pagalvoti apie papildomą darbą?",
+            "severity": "low",
+            "tag": "tag_income_low"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_income",
+                "operator": ">",
+                "right": 5000
+            },
+            "message": "Iš kur tiek uždirbate? Matyt vogiate iš valstybės.",
+            "severity": "medium",
+            "tag": "tag_income_high"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_income",
+                "operator": ">",
+                "right": 1000
+            },
+            "message": "Jūsų pajamos yra didelės. Galbūt verta pagalvoti apie investavimą?",
+            "severity": "low",
+            "tag": "tag_income_high"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_income",
+                "operator": "==",
+                "right": 69
+            },
+            "message": "lmao xd",
+            "severity": "low",
+            "tag": "tag_income_unique_1"
+        },
+        {
+            "condition":{
+                "type": "numeric",
+                "left": "total_expense",
+                "operator": "<",
+                "right": 500
+            },
+            "message": "Jūsų išlaidos yra mažesnės nei 500 šmekelių. Taupote?",
+            "severity": "low",
+            "tag": "tag_expense_low"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_expense",
+                "operator": ">",
+                "right": 5000
+            },
+            "message": "Iš kur tiek išleidžiate? Matyt vogiate iš valstybės.",
+            "severity": "medium",
+            "tag": "tag_expense_high"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_expense",
+                "operator": ">",
+                "right": 1000
+            },
+            "message": "Jūsų išlaidos yra didelės. Galbūt verta pagalvoti apie taupymą?",
+            "severity": "low",
+            "tag": "tag_expense_high"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_expense",
+                "operator": "==",
+                "right": 69
+            },
+            "message": "lmao xd",
+            "severity": "low",
+            "tag": "tag_expense_unique_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "balance",
+                "operator": "<",
+                "right": 500
+            },
+            "message": "Jūsų likutis yra mažesnis nei 500 evrėjų. Galbūt verta pagalvoti apie taupymą?",
+            "severity": "low",
+            "tag": "tag_balance_low"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "balance",
+                "operator": ">",
+                "right": 5000
+            },
+            "message": "Iš kur tiek turite? Matyt vogiate iš valstybės.",
+            "severity": "medium",
+            "tag": "tag_balance_high"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "balance",
+                "operator": ">",
+                "right": 2000
+            },
+            "message": "Jūsų likutis yra padoraus dydžio. Galbūt verta pagalvoti apie investavimą?",
+            "severity": "low",
+            "tag": "tag_balance_high"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "balance",
+                "operator": "==",
+                "right": 69
+            },
+            "message": "lmao xd",
+            "severity": "low",
+            "tag": "tag_balance_unique_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_expense",
+                "operator": ">",
+                "right": "total_income"
+            },
+            "message": "Jūs išleidžiate daugiau nei uždirbate. Peržiūrėkite savo išlaidas ir pajamas.",
+            "severity": "high",
+            "tag": "tag_expensevsbalance_high"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_expense / total_income",
+                "operator": ">",
+                "right": 0.8
+            },
+            "message": "Jūsų išlaidos siekia daugiau nei 80% pajamų. Taupykite, kol dar nevėlu!",
+            "severity": "medium",
+            "tag": "tag_expensevsbalance_low"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_expense / total_income",
+                "operator": ">",
+                "right": 0.5
+            },
+            "message": "Jūsų išlaidos sudaro daugiau nei 50% pajamų. Peržiūrėkite savo biudžetą.",
+            "severity": "low",
+            "tag": "tag_expensevsbalance_low"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_expense / total_income",
+                "operator": "<",
+                "right": 0.1
+            },
+            "message": "Jūsų išlaidos sudaro mažiau nei 10% pajamų. Puiku! Tačiau galbūt verta investuoti?",
+            "severity": "low",
+            "tag": "tag_expensevsbalance_low"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_expense / total_income",
+                "operator": "<",
+                "right": 0.2
+            },
+            "message": "Jūsų išlaidos sudaro mažiau nei 20% pajamų. Galbūt verta investuoti?",
+            "severity": "low",
+            "tag": "tag_expensevsbalance_low"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "total_expense / total_income",
+                "operator": "<",
+                "right": 0.5
+            },
+            "message": "Jūsų išlaidos sudaro mažiau nei 50% pajamų. Puiku! Tačiau galbūt verta investuoti?",
+            "severity": "low",
+            "tag": "tag_expensevsbalance_low"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Maistas'] / total_expense",
+                "operator": ">",
+                "right": 0.6
+            },
+            "message": "Daugiau nei 60% jūsų išlaidų tenka maistui.",
+            "severity": "medium",
+            "tag": "tag_category_maistas_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Maistas'] / total_expense",
+                "operator": ">",
+                "right": 0.3
+            },
+            "message": "Daugiau nei 30% jūsų išlaidų tenka maistui.",
+            "severity": "medium",
+            "tag": "tag_category_maistas_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Prabangus maistas'] / total_expense",
+                "operator": ">",
+                "right": 0.15
+            },
+            "message": "Jūs dažnai užsisakote prabangų maistą.",
+            "severity": "medium",
+            "tag": "tag_category_prabangus_maistas_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Pramogos (Transportas)'] / total_expense",
+                "operator": ">",
+                "right": 0.2
+            },
+            "message": "Jūsų transporto išlaidos sudaro daugiau nei 20% išlaidų. Galbūt verta pasivažinėti dviračiu?",
+            "severity": "medium",
+            "tag": "tag_category_transportas_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Sveikata'] / total_expense",
+                "operator": ">",
+                "right": 0.1
+            },
+            "message": "Daugiau nei 10% jūsų išlaidų tenka sveikatai.",
+            "severity": "medium",
+            "tag": "tag_category_sveikata_1"
+        },
+        {
+            "condition": {
+                "type": "category_spent",
+                "category": "Sveikata"
+            },
+            "message": "Jūs išleidote pinigų sveikatai. Liaukitės sirgę!",
+            "severity": "low",
+            "tag": "tag_category_sveikata_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Sportas'] / total_expense",
+                "operator": ">",
+                "right": 0.1
+            },
+            "message": "Daugiau nei 10% jūsų išlaidų tenka Sportui. Puiku! Sveikata - tai svarbiausia.",
+            "severity": "medium",
+            "tag": "tag_category_sportas_1"
+        },
+        {
+            "condition": {
+                "type": "category_spent",
+                "category": "Sportas"
+            },
+            "message": "Jūs išleidote pinigų sportui. Puiku! Sveikata - tai svarbiausia.",
+            "severity": "low",
+            "tag": "tag_category_sportas_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Mokslai'] / total_expense",
+                "operator": ">",
+                "right": 0.1
+            },
+            "message": "Daugiau nei 10% jūsų išlaidų tenka mokslams.",
+            "severity": "medium",
+            "tag": "tag_category_mokslai_1"
+        },
+        {
+            "condition": {
+                "type": "category_spent",
+                "category": "Mokslai"
+            },
+            "message": "Jūs išleidote pinigų mokslams.",
+            "severity": "low",
+            "tag": "tag_category_mokslai_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Pramogos (žaidimai)'] / total_expense",
+                "operator": ">",
+                "right": 0.1
+            },
+            "message": "Daugiau nei 10% jūsų išlaidų tenka žaidimams. Ar verta?.",
+            "severity": "medium",
+            "tag": "tag_category_pramogos_zaidimai_1"
+        },
+        {
+            "condition": {
+                "type": "category_spent",
+                "category": "Pramogos (žaidimai)"
+            },
+            "message": "Jūs išleidote pinigų žaidimams. Ar buvo verta?",
+            "severity": "low",
+            "tag": "tag_category_pramogos_zaidimai_1"
+        },
+        {
+            "condition": {
+                "type": "category_spent",
+                "category": "Pramogos (prenumeratos)"
+            },
+            "message": "Jūs išleidote pinigų prenumeratoms. Negailo praleisto laiko?",
+            "severity": "low",
+            "tag": "tag_category_pramogos_prenumeratos_1"
+        },
+        {
+            "condition": {
+                "type": "category_spent",
+                "category": "Pramogos (kelionės)"
+            },
+            "message": "Jūs išleidote pinigų kelionėms. Puiku?",
+            "severity": "low",
+            "tag": "tag_category_pramogos_keliones_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Žalingi įpročiai (alkoholis)'] / total_expense",
+                "operator": ">",
+                "right": 0.1
+            },
+            "message": "Daugiau nei 10% jūsų išlaidų tenka alkoholiui. Pasistenkite sumažinti šias išlaidas.",
+            "severity": "medium",
+            "tag": "tag_category_zalingi_alkoholis_1"
+        },
+        {
+            "condition": {
+                "type": "category_spent",
+                "category": "Žalingi įpročiai (alkoholis)"
+            },
+            "message": "Jūs išleidote pinigų alkoholiui. Galbūt verta pagalvoti apie sveikatą? Arba tiesiog pigiau gerti?",
+            "severity": "medium",
+            "tag": "tag_category_zalingi_alkoholis_1"
+        },
+        {
+            "condition": {
+                "type": "category_spent",
+                "category": "Žalingi įpročiai (tabakas)"
+            },
+            "message": "Gal reikėtų mesti rūkyti?",
+            "severity": "medium",
+            "tag": "tag_category_zalingi_tabakas_1"
+        },
+        {
+            "condition": {
+                "type": "category_spent",
+                "category": "Žalingi įpročiai (kiti)"
+            },
+            "message": "Ką šnioji?",
+            "severity": "medium",
+            "tag": "tag_category_zalingi_kiti_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Apranga'] / total_expense",
+                "operator": ">",
+                "right": 0.1
+            },
+            "message": "Daugiau nei 10% jūsų išlaidų tenka aprangai. Galbūt verta pagalvoti apie mados industrijos poveikį aplinkai?",
+            "severity": "medium",
+            "tag": "tag_category_apranga_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Labdaros'] / total_expense",
+                "operator": ">",
+                "right": 0.1
+            },
+            "message": "Daugiau nei 10% jūsų išlaidų tenka labdarai. Puiku! Pasaulis dėl to geresnis.",
+            "severity": "medium",
+            "tag": "tag_category_labdaros_1"
+        },
+        {
+            "condition": {
+                "type": "category_spent",
+                "category": "Labdaros"
+            },
+            "message": "Jūs paaukojote labdarai. Tai nuostabus gestas!",
+            "severity": "medium",
+            "tag": "tag_category_labdaros_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Komunalinės paslaugos'] / total_income",
+                "operator": ">",
+                "right": 0.1
+            },
+            "message": "Daugiau nei 10% jūsų pajamų tenka komunalinėms paslaugoms. Galbūt verta pasitikrinti, ar nenaudojate per daug energijos ar vandens?",
+            "severity": "medium",
+            "tag": "tag_category_komunalines_paslaugos_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Mokesčiai'] / total_income",
+                "operator": ">",
+                "right": 0.1
+            },
+            "message": "Daugiau nei 10% jūsų pajamų tenka mokesčiams. Įsitikinkite, kad viską tvarkote teisingai.",
+            "severity": "medium",
+            "tag": "tag_category_mokesciai_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Investicijos'] / total_expense",
+                "operator": ">",
+                "right": 0.19
+            },
+            "message": "Daugiau nei 20% jūsų išlaidų tenka investicijoms. Puiku! Investuokite į savo ateitį.",
+            "severity": "medium",
+            "tag": "tag_category_investicijos_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Taupymas'] / total_expense",
+                "operator": ">",
+                "right": 0.1
+            },
+            "message": "Daugiau nei 10% jūsų išlaidų tenka taupymui. Puiku! Taupykite, kol dar nevėlu.",
+            "severity": "medium",
+            "tag": "tag_category_taupymas_1"
+        },
+        {
+            "condition": {
+                "type": "numeric",
+                "left": "category_spending['Draudimas'] / total_expense",
+                "operator": ">",
+                "right": 0.1
+            },
+            "message": "Daugiau nei 10% jūsų išlaidų tenka draudimui.",
+            "severity": "medium",
+            "tag": "tag_category_draudimas_1"
+        },
+        {
+            "condition": {
+                "type": "category_spent",
+                "category": "Skolų grąžinimas"
+            },
+            "message": "Jūs išleidote pinigų skolų grąžinimui. Džiugu, kad vengiate kojų sulaužymo",
+            "severity": "medium",
+            "tag": "tag_category_skolu_grazinimas_1"
+        }, 
+        {
+            "condition": {
+                "type": "keyword",
+                "keyword": "Kilkim Zaibu"
+            },
+            "message": "Jūs nusipirkote 'Kilkim Žaibu' bilietus! Bombaclat!",
+            "severity": "high"
+        }
+    ]
+}
