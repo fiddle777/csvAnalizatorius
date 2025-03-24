@@ -29,7 +29,8 @@
     "benu",
     "drogas",
     "pasaulio optika",
-    "vision express"
+    "vision express",
+    "eurokos"
   ],
   "Sportas": [
     "gym",
@@ -67,7 +68,8 @@
     "biliardo klubas",
     "Apollo",
     "ragainė",
-    "karolinos boulingas"
+    "karolinos boulingas",
+    "ragaine"
   ],
   "Žalingi įpročiai (alkoholis)": [
     "bix",
@@ -76,12 +78,14 @@
     "+++",
     "vynoteka",
     "CHEERS",
-    "PUB"
+    "PUB",
+    "globaltips europe"
   ],
   "Žalingi įpročiai (tabakas)": [
     "CIGSLT.IO",
     "skonis ir kvapas",
-    "ecodumas"
+    "ecodumas",
+    "arbata ir t"
   ],
   "Žalingi įpročiai (kiti)": [],
   "Apranga": [
@@ -102,11 +106,13 @@
   "Kiti pirkiniai (misc)": [
     "Dovana",
     "topo centras",
-    "eBay"
+    "eBay",
+    "dovanu salis"
   ],
   "Komunalinės paslaugos": [
     "minimalus kasdienių paslaugų mokestis",
-    "ežio papildymas"
+    "ežio papildymas",
+    "ezio papildymas"
   ],
   "Mokesčiai": [
     "tax payment",
@@ -121,7 +127,10 @@
   "Skolų grąžinimas": [
     "loan payment",
     "credit card payment",
-    "mortgage"
+    "mortgage",
+    "krepšelio gražinimas už"
   ],
-  "Nuoma": []
+  "Nuoma": [
+    "H642/HB ZIRMUNU G. 64"
+  ]
 }
