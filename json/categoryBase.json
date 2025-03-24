@@ -1,108 +1,127 @@
 {
-    "Maistas": [
-      "express market",
-      "iki",
-      "rimi",
-      "MAXIMA"
-    ],
-    "Prabangus maistas": [
-      "wolt",
-      "jammi",
-      "kfc",
-      "MCDONALDS",
-      "CANDY POP"
-    ],
-    "Transportas": [
-      "viada",
-      "uber",
-      "lyft",
-      "BOLT.EU",
-      "LTG"
-    ],
-    "Sveikata": [
-      "benu"
-    ],
-    "Sportas": [
-      "gym",
-      "fitness",
-      "sport"
-    ],
-    "Mokslai": [
-      "konsultacijos"
-    ],
-    "Technologija": [
-      "apple",
-      "microsoft",
-      "best buy"
-    ],
-    "Pramogos (žaidimai)": [
-      "steam",
-      "epic games",
-      "playstation"
-    ],
-    "Pramogos (prenumeratos)": [
-      "patreon",
-      "netflix",
-      "spotify",
-      "amazon prime",
-      "hbo max"
-    ],
-    "Pramogos (kelionės)": [
-      "booking.com",
-      "ryanair",
-      "airbnb"
-    ],
-    "Pramogos (kitos)": [
-      "kilkim zaibu",
-      "biliardo klubas",
-      "Apollo"
-    ],
-    "Žalingi įpročiai (alkoholis)": [
-      "bix",
-      "spunka",
-      "bukowski",
-      "+++",
-      "vynoteka",
-      "CHEERS",
-      "PUB"
-    ],
-    "Žalingi įpročiai (tabakas)": [
-      "CIGSLT.IO"
-    ],
-    "Žalingi įpročiai (kiti)": [],
-    "Apranga": [
-      "H&M"
-    ],
-    "Labdaros": [
-      "donation",
-      "charity",
-      "red cross",
-      "SOS Vaik"
-    ],
-    "Gyvūnėliai": [
-      "vet",
-      "pet store",
-      "grooming"
-    ],
-    "Kiti pirkiniai (misc)": [
-      "Dovana"
-    ],
-    "Komunalinės paslaugos": [
-      "minimalus kasdienių paslaugų mokestis",
-      "ezio papildymas"
-    ],
-    "Mokesčiai": [
-      "tax payment",
-      "irs",
-      "revenue service",
-      "PSD"
-    ],
-    "Investicijos": [],
-    "Taupymas": [],
-    "Draudimas": [],
-    "Skolų grąžinimas": [
-      "loan payment",
-      "credit card payment",
-      "mortgage"
-    ]
-  }
+  "Maistas": [
+    "express market",
+    "iki",
+    "rimi",
+    "MAXIMA"
+  ],
+  "Prabangus maistas": [
+    "wolt",
+    "jammi",
+    "kfc",
+    "MCDONALDS",
+    "CANDY POP",
+    "noriupicos",
+    "rimtas reikalas",
+    "ziezmariu mesa",
+    "wokbusters",
+    "crustum"
+  ],
+  "Transportas": [
+    "viada",
+    "uber",
+    "lyft",
+    "BOLT.EU",
+    "LTG",
+    "emsi degaline"
+  ],
+  "Sveikata": [
+    "benu",
+    "drogas",
+    "pasaulio optika",
+    "vision express"
+  ],
+  "Sportas": [
+    "gym",
+    "fitness",
+    "sport"
+  ],
+  "Mokslai": [
+    "konsultacijos"
+  ],
+  "Technologija": [
+    "apple",
+    "microsoft",
+    "best buy"
+  ],
+  "Pramogos (žaidimai)": [
+    "steam",
+    "epic games",
+    "playstation"
+  ],
+  "Pramogos (prenumeratos)": [
+    "patreon",
+    "netflix",
+    "spotify",
+    "amazon prime",
+    "hbo max"
+  ],
+  "Pramogos (kelionės)": [
+    "booking.com",
+    "ryanair",
+    "airbnb",
+    "Vsi Dazasvydzio centra"
+  ],
+  "Pramogos (kitos)": [
+    "kilkim zaibu",
+    "biliardo klubas",
+    "Apollo",
+    "ragainė",
+    "karolinos boulingas"
+  ],
+  "Žalingi įpročiai (alkoholis)": [
+    "bix",
+    "spunka",
+    "bukowski",
+    "+++",
+    "vynoteka",
+    "CHEERS",
+    "PUB"
+  ],
+  "Žalingi įpročiai (tabakas)": [
+    "CIGSLT.IO",
+    "skonis ir kvapas",
+    "ecodumas"
+  ],
+  "Žalingi įpročiai (kiti)": [],
+  "Apranga": [
+    "H&M",
+    "armijai ir"
+  ],
+  "Labdaros": [
+    "donation",
+    "charity",
+    "red cross",
+    "SOS Vaik"
+  ],
+  "Gyvūnėliai": [
+    "vet",
+    "pet store",
+    "grooming"
+  ],
+  "Kiti pirkiniai (misc)": [
+    "Dovana",
+    "topo centras",
+    "eBay"
+  ],
+  "Komunalinės paslaugos": [
+    "minimalus kasdienių paslaugų mokestis",
+    "ežio papildymas"
+  ],
+  "Mokesčiai": [
+    "tax payment",
+    "irs",
+    "revenue service",
+    "PSD",
+    "išėmimo mokestis"
+  ],
+  "Investicijos": [],
+  "Taupymas": [],
+  "Draudimas": [],
+  "Skolų grąžinimas": [
+    "loan payment",
+    "credit card payment",
+    "mortgage"
+  ],
+  "Nuoma": []
+}
