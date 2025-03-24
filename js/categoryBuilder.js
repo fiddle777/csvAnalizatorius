@@ -60,7 +60,7 @@ function promptUserToSelectCategory(transactionDescription, callback) {
 
     const popupHtml = `
         <div id="categorySelectionPopup">
-            <h3>Nerasta categorija mokėjimui: "${transactionDescription}". Pasirinkite kategoriją:</h3>
+            <h3>Nerasta kategorija mokėjimui: "${transactionDescription}". Pasirinkite kategoriją:</h3>
             <select id="categorySelect">
                 ${categories.map(category => `<option value="${category}">${category}</option>`).join('')}
             </select>
