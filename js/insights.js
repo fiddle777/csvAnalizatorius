@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let insights;
     try {
-        const response = await fetch('json/Insights.json');
+        const response = await fetch('json/insights.json');
         if (!response.ok) {
             throw new Error(`Failed to fetch insights: ${response.statusText}`);
         }
