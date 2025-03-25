@@ -3,7 +3,9 @@
     "express market",
     "iki",
     "rimi",
-    "MAXIMA"
+    "MAXIMA",
+    "lidl",
+    "norfa"
   ],
   "Prabangus maistas": [
     "wolt",
@@ -15,7 +17,33 @@
     "rimtas reikalas",
     "ziezmariu mesa",
     "wokbusters",
-    "crustum"
+    "crustum",
+    "hesburger",
+    "narvesen",
+    "pica",
+    "picerija",
+    "kepykla",
+    "kepyklele",
+    "coffee",
+    "kava",
+    "mieles",
+    "dessert",
+    "motiko",
+    "vecais",
+    "caffe",
+    "blyn",
+    "karstos galvos",
+	"pica",
+	"pizza",
+	"kavine",
+	"formosa",
+	"sushi",
+	"peri peri",
+	"chicken",
+	"jautien",
+	"armeniuk",
+	"kondite",
+	"cafe"
   ],
   "Transportas": [
     "viada",
@@ -23,27 +51,47 @@
     "lyft",
     "BOLT.EU",
     "LTG",
-    "emsi degaline"
+    "emsi degaline",
+    "bolt",
+    "orlen",
+    "circle k",
+    "judu",
+    "neste",
+    "degaline",
+    "baltic petroleum",
+    "mticket",
+    "park",
+	"regitra"
   ],
   "Sveikata": [
     "benu",
     "drogas",
     "pasaulio optika",
     "vision express",
-    "eurokos"
+    "eurokos",
+    "vaistine",
+    "gintarine",
+    "konsultacijos",
+    "psicho",
+    "8 drambliai",
+	"jaunas",
+	"akiniai",
+	"polikli"
   ],
   "Sportas": [
     "gym",
     "fitness",
     "sport"
   ],
-  "Mokslai": [
-    "konsultacijos"
-  ],
+  "Mokslai": [],
   "Technologija": [
     "apple",
     "microsoft",
-    "best buy"
+    "best buy",
+    "topo centras",
+    "senukai",
+    "mikratas",
+    "fotohobis"
   ],
   "Pramogos (žaidimai)": [
     "steam",
@@ -61,7 +109,14 @@
     "booking.com",
     "ryanair",
     "airbnb",
-    "Vsi Dazasvydzio centra"
+    "Vsi Dazasvydzio centra",
+    "hotel",
+    "kontroles po",
+    "perkela",
+    "berlin",
+    "dresden",
+	"praha",
+	"nobed"
   ],
   "Pramogos (kitos)": [
     "kilkim zaibu",
@@ -69,7 +124,12 @@
     "Apollo",
     "ragainė",
     "karolinos boulingas",
-    "ragaine"
+    "ragaine",
+	"kinas",
+	"kino centras",
+	"body shop",
+	"floristas",
+	"pink parlor"
   ],
   "Žalingi įpročiai (alkoholis)": [
     "bix",
@@ -79,18 +139,39 @@
     "vynoteka",
     "CHEERS",
     "PUB",
-    "globaltips europe"
+    "globaltips europe",
+    "birzha",
+    "vežė neatvežė",
+    "baras",
+    "gastrobaras",
+    "lukiskiu kalejimas",
+    "beer",
+    "beerhouse",
+    "pirkau is limonos",
+	"gaivus geri",
+	"wine",
+	"alude",
+	"istorijos"
   ],
   "Žalingi įpročiai (tabakas)": [
     "CIGSLT.IO",
     "skonis ir kvapas",
     "ecodumas",
-    "arbata ir t"
+    "arbata ir t",
+    "royal smoke"
   ],
-  "Žalingi įpročiai (kiti)": [],
+  "Žalingi įpročiai (kiti)": [
+    "angaras v",
+	"gabber"
+  ],
   "Apranga": [
     "H&M",
-    "armijai ir"
+    "armijai ir",
+    "humana",
+	"zara",
+	"tezenis",
+	"bershka",
+	"frankenshop"
   ],
   "Labdaros": [
     "donation",
@@ -105,9 +186,15 @@
   ],
   "Kiti pirkiniai (misc)": [
     "Dovana",
-    "topo centras",
     "eBay",
-    "dovanu salis"
+    "dovanu salis",
+    "forus",
+    "Mokėjimas mobiliąja programėle",
+    "mokejimas mobiliaja programele",
+    "Lėšų nurašymas",
+    "notprovided",
+	"withdrawal",
+	"pasilepink"
   ],
   "Komunalinės paslaugos": [
     "minimalus kasdienių paslaugų mokestis",
@@ -119,10 +206,15 @@
     "irs",
     "revenue service",
     "PSD",
-    "išėmimo mokestis"
+    "išėmimo mokestis",
+    "mokestis"
   ],
-  "Investicijos": [],
-  "Taupymas": [],
+  "Investicijos": [
+    "trading"
+  ],
+  "Taupymas": [
+	"savings"
+  ],
   "Draudimas": [],
   "Skolų grąžinimas": [
     "loan payment",

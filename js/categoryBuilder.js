@@ -1,5 +1,5 @@
 import { categoryBase, isJsonUpdated } from './categoryBaseControl.js';
-import { getSelectedColumns, csvReady } from './csvInputSwedbankLT.js';
+import { getSelectedColumns, csvReady } from './csvInput.js';
 
 let unmatchedTransactions = [];
 let isPromptActive = false;
@@ -67,6 +67,7 @@ function promptUserToSelectCategory(transactionDescription, callback) {
             <br><br>
             <button id="submitCategory">Įkelti</button>
             <button id="skipCategory">Praleisti</button>
+            <button id="skipAllCategories">Praleisti visus</button>
         </div>
     `;
 
@@ -93,6 +94,12 @@ function promptUserToSelectCategory(transactionDescription, callback) {
     });
 
     document.getElementById('skipCategory').addEventListener('click', function () {
+        document.getElementById('categorySelectionPopup').remove();
+        callback(); // Notify that the prompt is complete
+    });
+
+    document.getElementById('skipAllCategories').addEventListener('click', function () {
+        unmatchedTransactions = []; // Clear the unmatched transactions queue
         document.getElementById('categorySelectionPopup').remove();
         callback(); // Notify that the prompt is complete
     });

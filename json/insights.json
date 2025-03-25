@@ -374,7 +374,7 @@
                 "type": "category_spent",
                 "category": "Žalingi įpročiai (kiti)"
             },
-            "message": "Ką šnioji?",
+            "message": "Ką šniojai?",
             "severity": "medium",
             "tag": "tag_category_zalingi_kiti_1"
         },
@@ -479,6 +479,14 @@
                 "keyword": "Kilkim Zaibu"
             },
             "message": "Jūs nusipirkote 'Kilkim Žaibu' bilietus! Bombaclat!",
+            "severity": "high"
+        },
+        {
+            "condition": {
+                "type": "keyword",
+                "keyword": "gabber"
+            },
+            "message": "Mėgsti reivus?",
             "severity": "high"
         }
     ]
