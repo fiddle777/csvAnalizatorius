@@ -33,17 +33,17 @@
     "caffe",
     "blyn",
     "karstos galvos",
-	"pica",
-	"pizza",
-	"kavine",
-	"formosa",
-	"sushi",
-	"peri peri",
-	"chicken",
-	"jautien",
-	"armeniuk",
-	"kondite",
-	"cafe"
+    "pica",
+    "pizza",
+    "kavine",
+    "formosa",
+    "sushi",
+    "peri peri",
+    "chicken",
+    "jautien",
+    "armeniuk",
+    "kondite",
+    "cafe"
   ],
   "Transportas": [
     "viada",
@@ -61,7 +61,7 @@
     "baltic petroleum",
     "mticket",
     "park",
-	"regitra"
+    "regitra"
   ],
   "Sveikata": [
     "benu",
@@ -74,9 +74,9 @@
     "konsultacijos",
     "psicho",
     "8 drambliai",
-	"jaunas",
-	"akiniai",
-	"polikli"
+    "jaunas",
+    "akiniai",
+    "polikli"
   ],
   "Sportas": [
     "gym",
@@ -115,8 +115,8 @@
     "perkela",
     "berlin",
     "dresden",
-	"praha",
-	"nobed"
+    "praha",
+    "nobed"
   ],
   "Pramogos (kitos)": [
     "kilkim zaibu",
@@ -125,11 +125,12 @@
     "ragainė",
     "karolinos boulingas",
     "ragaine",
-	"kinas",
-	"kino centras",
-	"body shop",
-	"floristas",
-	"pink parlor"
+    "kinas",
+    "kino centras",
+    "body shop",
+    "floristas",
+    "pink parlor",
+    "anabeoart"
   ],
   "Žalingi įpročiai (alkoholis)": [
     "bix",
@@ -148,10 +149,10 @@
     "beer",
     "beerhouse",
     "pirkau is limonos",
-	"gaivus geri",
-	"wine",
-	"alude",
-	"istorijos"
+    "gaivus geri",
+    "wine",
+    "alude",
+    "istorijos"
   ],
   "Žalingi įpročiai (tabakas)": [
     "CIGSLT.IO",
@@ -162,16 +163,16 @@
   ],
   "Žalingi įpročiai (kiti)": [
     "angaras v",
-	"gabber"
+    "gabber"
   ],
   "Apranga": [
     "H&M",
     "armijai ir",
     "humana",
-	"zara",
-	"tezenis",
-	"bershka",
-	"frankenshop"
+    "zara",
+    "tezenis",
+    "bershka",
+    "frankenshop"
   ],
   "Labdaros": [
     "donation",
@@ -193,8 +194,14 @@
     "mokejimas mobiliaja programele",
     "Lėšų nurašymas",
     "notprovided",
-	"withdrawal",
-	"pasilepink"
+    "withdrawal",
+    "pasilepink",
+    "pavedimas",
+    "pervedimas",
+    "išlaidoms",
+    "už saskaitą",
+    "17625984",
+    "8128134"
   ],
   "Komunalinės paslaugos": [
     "minimalus kasdienių paslaugų mokestis",
@@ -213,7 +220,7 @@
     "trading"
   ],
   "Taupymas": [
-	"savings"
+    "savings"
   ],
   "Draudimas": [],
   "Skolų grąžinimas": [
