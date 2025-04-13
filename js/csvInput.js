@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             });
                         }
                         else{
-                            showErrorPopup("DĖMESIO! Failas turi netinkamus duomenis, patikrinkite.");
+                            showErrorPopup("WARNING! CSV file format not recognized. Please upload a valid SEB or SWEDBANK CSV file.");
                             return;
                         }
                     },

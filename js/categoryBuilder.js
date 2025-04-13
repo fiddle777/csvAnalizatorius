@@ -60,14 +60,14 @@ function promptUserToSelectCategory(transactionDescription, callback) {
 
     const popupHtml = `
         <div id="categorySelectionPopup">
-            <h3>Nerasta kategorija mokėjimui: "${transactionDescription}". Pasirinkite kategoriją:</h3>
+            <h3>Category not found for payment: "${transactionDescription}". Please select a category:</h3>
             <select id="categorySelect">
                 ${categories.map(category => `<option value="${category}">${category}</option>`).join('')}
             </select>
             <br><br>
-            <button id="submitCategory">Įkelti</button>
-            <button id="skipCategory">Praleisti</button>
-            <button id="skipAllCategories">Praleisti visus</button>
+            <button id="submitCategory">Submit</button>
+            <button id="skipCategory">Skip</button>
+            <button id="skipAllCategories">Skip All</button>
         </div>
     `;
 
@@ -77,7 +77,7 @@ function promptUserToSelectCategory(transactionDescription, callback) {
         const selectedCategory = document.getElementById('categorySelect').value;
 
         if (categories.includes(selectedCategory)) {
-            const userKeyword = prompt(`Įveskite raktažodį kategorijai "${selectedCategory}"\n"${transactionDescription}"`);
+            const userKeyword = prompt(`Enter a keyword for the category "${selectedCategory}"\n"${transactionDescription}"`);
             if (userKeyword && userKeyword.trim() !== "") {
                 categoryBase.json[selectedCategory].push(userKeyword.trim()); // Add the keyword to the selected category
                 console.log(`Transaction "${userKeyword}" added to category: ${selectedCategory}`);

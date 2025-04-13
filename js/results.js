@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Final Balance:', balance);
 
     if (!isNaN(balance)) {
-        document.getElementById('balanceDisplay').textContent = `Likutis: ${balance.toFixed(2)}€`;
+        document.getElementById('balanceDisplay').textContent = `Balance: ${balance.toFixed(2)}€`;
     } else {
         console.log('Balance not found in localStorage.');
-        document.getElementById('balanceDisplay').textContent = 'Likutis: N/A';
+        document.getElementById('balanceDisplay').textContent = 'Balance: N/A';
     }
 
     const categoryBase = JSON.parse(localStorage.getItem('categoryBase'));
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             transaction.category = matchedCategory;
             console.log(`Transaction "${transaction.description}" matched with category: ${matchedCategory}`);
         } else {
-            transaction.category = 'Nekategorizuotos išlaidos';
+            transaction.category = 'Uncategorized';
             console.log(`Transaction "${transaction.description}" did not match any category.`);
         }
     });
@@ -91,7 +91,7 @@ const ctx = document.getElementById('incomeExpenseChart').getContext('2d');
 new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ['Pajamos', 'Išlaidos'],
+        labels: ['Income', 'Expenses'],
         datasets: [{
             data: [totalIncome, totalExpenses],
             backgroundColor: ['#34D399', '#F87171'],
@@ -165,8 +165,8 @@ new Chart(ctx, {
     });
 //PANEL 3------------------------------------------------------------------------
 
-document.getElementById('incomeDisplay').textContent = `Pajamos: ${totalIncome.toFixed(2)}€`;
-document.getElementById('expensesDisplay').textContent = `Išlaidos: ${totalExpenses.toFixed(2)}€`;
+document.getElementById('incomeDisplay').textContent = `Income: ${totalIncome.toFixed(2)}€`;
+document.getElementById('expensesDisplay').textContent = `Expenses: ${totalExpenses.toFixed(2)}€`;
 
 // PANEL 4------------------------------------------------------------------------
 const dailyTotals = transactions.reduce((totals, transaction) => {
@@ -194,7 +194,7 @@ const expenseData = dates.map(date => dailyTotals[date].expenses);
 
 // Canvas for the chart
 const panel4 = document.querySelector('#bottom-dashboard .panel.large:nth-child(1)'); // Select the first large panel
-panel4.innerHTML = '<h3 class="panel-title">Pajamos ir išlaidos per dieną</h3>'; // Add a title
+panel4.innerHTML = '<h3 class="panel-title">Daily Income and Expenses</h3>'; // Add a title
 const chartCanvas = document.createElement('canvas'); // Create a canvas element for the chart
 chartCanvas.id = 'dailyIncomeExpenseChart'; // Assign an ID for styling or reference
 panel4.appendChild(chartCanvas); // Append the canvas to the panel
@@ -213,7 +213,7 @@ new Chart(dailyCtx, {
         labels: dates,
         datasets: [
             {
-                label: 'Pajamos',
+                label: 'Income',
                 data: incomeDataWithMinHeight,
                 backgroundColor: '#34D399',
                 borderColor: '#10B981',
@@ -221,7 +221,7 @@ new Chart(dailyCtx, {
                 originalData: incomeData
             },
             {
-                label: 'Išlaidos',
+                label: 'Expenses',
                 data: expenseDataWithMinHeight.map(value => -value),
                 backgroundColor: '#F87171',
                 borderColor: '#EF4444',
@@ -263,7 +263,7 @@ new Chart(dailyCtx, {
 
                         // Generate a list of transactions for the hovered date
                         const transactionDetails = transactionsForDate.map(transaction => {
-                            const type = transaction.type === 'Income' ? 'Pajamos' : 'Išlaidos';
+                            const type = transaction.type === 'Income' ? 'Income' : 'Expenses';
                             const amount = parseFloat(transaction.amount).toFixed(2);
                             return `${type}: ${amount} € (${transaction.description})`;
                         });
@@ -278,7 +278,7 @@ new Chart(dailyCtx, {
                 stacked: true,
                 title: {
                     display: true,
-                    text: 'Data',
+                    text: 'Date',
                     color: '#E0E0E0'
                 },
                 ticks: {
@@ -289,7 +289,7 @@ new Chart(dailyCtx, {
                 stacked: true,
                 title: {
                     display: true,
-                    text: 'Kiekis',
+                    text: 'Amount',
                     color: '#E0E0E0'
                 },
                 ticks: {

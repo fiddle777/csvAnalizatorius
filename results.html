@@ -8,22 +8,22 @@
 </head>
 <body>
     <header>
-    <h1>CSV Analizės rezultatai</h1>
+    <h1>CSV Analysis Results</h1>
     <h2>
         <p>[<span id="firstDate">Loading...</span>; <span id="lastDate">Loading...</span>]</p>
     </h2>
     </header>
     <div id="top-dashboard" class="dashboard">
         <div class="panel small">
-            <h3 class="panel-title">Išlaidos ir pajamos</h3>
+            <h3 class="panel-title">Expenses and Income</h3>
             <canvas id="incomeExpenseChart"></canvas>
         </div>
         <div class="panel small">
-            <h3 class="panel-title">Išlaidos pagal kategoriją</h3>
+            <h3 class="panel-title">Expenses by Category</h3>
             <ul id="categoryTotalsList"></ul>
         </div>
         <div class="panel small">
-            <h3 class="panel-title">Likutis</h3>
+            <h3 class="panel-title">Balance</h3>
             <p id="balanceDisplay">Loading...</p>
             <p id="incomeDisplay">Loading...</p>
             <p id="expensesDisplay">Loading...</p>
@@ -37,8 +37,8 @@
         <div id="insightsPanel" class="panel large"></div>
     </div>
     <div id="buttons-container" style="text-align: center; margin-top: 20px;">
-        <button id="downloadInsights" class="download-button">Atsisiųsti insights.json</button>
-        <button id="downloadCategoryBase" class="download-button">Atsisiųsti categoryBase.json</button>
+        <button id="downloadInsights" class="download-button">Download insights.json</button>
+        <button id="downloadCategoryBase" class="download-button">Download categoryBase.json</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

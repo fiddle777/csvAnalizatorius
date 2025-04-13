@@ -1,5 +1,5 @@
 {
-  "Maistas": [
+  "Food": [
     "express market",
     "iki",
     "rimi",
@@ -7,7 +7,7 @@
     "lidl",
     "norfa"
   ],
-  "Prabangus maistas": [
+  "Luxury Food": [
     "wolt",
     "jammi",
     "kfc",
@@ -45,7 +45,7 @@
     "kondite",
     "cafe"
   ],
-  "Transportas": [
+  "Transport": [
     "viada",
     "uber",
     "lyft",
@@ -63,7 +63,7 @@
     "park",
     "regitra"
   ],
-  "Sveikata": [
+  "Health": [
     "benu",
     "drogas",
     "pasaulio optika",
@@ -78,13 +78,13 @@
     "akiniai",
     "polikli"
   ],
-  "Sportas": [
+  "Sports": [
     "gym",
     "fitness",
     "sport"
   ],
-  "Mokslai": [],
-  "Technologija": [
+  "Education": [],
+  "Technology": [
     "apple",
     "microsoft",
     "best buy",
@@ -93,19 +93,19 @@
     "mikratas",
     "fotohobis"
   ],
-  "Pramogos (žaidimai)": [
+  "Entertainment (Games)": [
     "steam",
     "epic games",
     "playstation"
   ],
-  "Pramogos (prenumeratos)": [
+  "Entertainment (Subscriptions)": [
     "patreon",
     "netflix",
     "spotify",
     "amazon prime",
     "hbo max"
   ],
-  "Pramogos (kelionės)": [
+  "Entertainment (Travel)": [
     "booking.com",
     "ryanair",
     "airbnb",
@@ -118,7 +118,7 @@
     "praha",
     "nobed"
   ],
-  "Pramogos (kitos)": [
+  "Entertainment (Other)": [
     "kilkim zaibu",
     "biliardo klubas",
     "Apollo",
@@ -132,7 +132,7 @@
     "pink parlor",
     "anabeoart"
   ],
-  "Žalingi įpročiai (alkoholis)": [
+  "Harmful Habits (Alcohol)": [
     "bix",
     "spunka",
     "bukowski",
@@ -154,18 +154,18 @@
     "alude",
     "istorijos"
   ],
-  "Žalingi įpročiai (tabakas)": [
+  "Harmful Habits (Tobacco)": [
     "CIGSLT.IO",
     "skonis ir kvapas",
     "ecodumas",
     "arbata ir t",
     "royal smoke"
   ],
-  "Žalingi įpročiai (kiti)": [
+  "Harmful Habits (Other)": [
     "angaras v",
     "gabber"
   ],
-  "Apranga": [
+  "Clothing": [
     "H&M",
     "armijai ir",
     "humana",
@@ -174,18 +174,18 @@
     "bershka",
     "frankenshop"
   ],
-  "Labdaros": [
+  "Charity": [
     "donation",
     "charity",
     "red cross",
     "SOS Vaik"
   ],
-  "Gyvūnėliai": [
+  "Pets": [
     "vet",
     "pet store",
     "grooming"
   ],
-  "Kiti pirkiniai (misc)": [
+  "Other Purchases (Misc)": [
     "Dovana",
     "eBay",
     "dovanu salis",
@@ -203,12 +203,12 @@
     "17625984",
     "8128134"
   ],
-  "Komunalinės paslaugos": [
+  "Utilities": [
     "minimalus kasdienių paslaugų mokestis",
     "ežio papildymas",
     "ezio papildymas"
   ],
-  "Mokesčiai": [
+  "Taxes": [
     "tax payment",
     "irs",
     "revenue service",
@@ -216,20 +216,20 @@
     "išėmimo mokestis",
     "mokestis"
   ],
-  "Investicijos": [
+  "Investments": [
     "trading"
   ],
-  "Taupymas": [
+  "Savings": [
     "savings"
   ],
-  "Draudimas": [],
-  "Skolų grąžinimas": [
+  "Insurance": [],
+  "Debt Repayment": [
     "loan payment",
     "credit card payment",
     "mortgage",
     "krepšelio gražinimas už"
   ],
-  "Nuoma": [
+  "Rent": [
     "H642/HB ZIRMUNU G. 64"
   ]
 }
